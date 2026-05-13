@@ -1,7 +1,3 @@
-// Name: Shirley Lin
-// Date: 2/17/26
-// Assignment: Homework 3 - 3.27
-
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -69,7 +65,6 @@ int main(int argc, char *argv[]) {
         close(fd_pipe[READ_END]);
         while((line_size = read(fd_file[READ_END], file_buffer, BUFFER_SIZE)) > 0) {
             write(fd_pipe[WRITE_END], file_buffer, line_size);
-            // printf("%s", file_buffer);
         }
 
         // Close pipe and file

@@ -1,7 +1,3 @@
-// Name: Shirley Lin
-// Last Updated: 4/3/26
-// Assignment: Homework 6
-
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>
